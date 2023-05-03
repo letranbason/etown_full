@@ -41,6 +41,14 @@
   font-style: normal;
   font-display: swap;
 }
+.cl-gradient {
+  background: linear-gradient(180deg, #F0E4D8 0%, #BDB3AA 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
 .f-f {
   font-family: "SFProDisplay", sans-serif;
 }

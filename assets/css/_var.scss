@@ -65,6 +65,13 @@ $cl-brown: #5C432E;
 $cl-lightbrown: #CFAE89;
 $cl-lightgold: #C6B59E;
 $cl-dark : #1D2827;
+.cl-gradient{
+    background: linear-gradient(180deg, #F0E4D8 0%, #BDB3AA 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
 
 
 .f-f{
