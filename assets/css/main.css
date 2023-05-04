@@ -530,22 +530,26 @@ body .btn.btn-white {
 }
 #overview .overview_param .param-item {
   padding: 9rem 0;
+  align-items: center;
+  text-align: center;
 }
 @media (max-width: 767px) {
   #overview .overview_param .param-item {
     padding: 3rem 0;
     position: relative;
+    align-items: center;
+    text-align: center;
   }
 }
-#overview .overview_param .param-item .wrap-ele {
+#overview .overview_param .param-item .wrap {
   position: relative;
 }
-#overview .overview_param .param-item .wrap-ele .page-item-info {
+#overview .overview_param .param-item .wrap .page-item-info {
   position: absolute;
   right: -20px;
 }
 @media (max-width: 767px) {
-  #overview .overview_param .param-item .wrap-ele .page-item-info {
+  #overview .overview_param .param-item .wrap .page-item-info {
     right: 0;
   }
 }

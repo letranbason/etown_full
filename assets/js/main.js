@@ -102,26 +102,25 @@ jQuery(document).ready(function () {
     App.slideView();
     App.sliderAmenity();
     App.mobileHandle();
-    AOS.init({duration: 2500,disable: 'mobile'});
 });
 
-const zoomableImage = document.getElementById('zoomable-image');
-mediumZoom(zoomableImage);
+// const zoomableImage = document.getElementById('zoomable-image');
+// mediumZoom(zoomableImage);
 
-const zoomInButton = document.getElementById('zoom-in-button');
-const zoomOutButton = document.getElementById('zoom-out-button');
-const zoomInstance = mediumZoom(zoomableImage);
+// const zoomInButton = document.getElementById('zoom-in-button');
+// const zoomOutButton = document.getElementById('zoom-out-button');
+// const zoomInstance = mediumZoom(zoomableImage);
 
-zoomInButton.addEventListener('click', () => {
-  zoomInstance.zoom({
-    scale: zoomInstance.getOptions().maxScale
-  });
-});
+// zoomInButton.addEventListener('click', () => {
+//   zoomInstance.zoom({
+//     scale: zoomInstance.getOptions().maxScale
+//   });
+// });
 
-zoomOutButton.addEventListener('click', () => {
-  zoomInstance.zoom({
-    scale: zoomInstance.getOptions().minScale
-  });
-});
+// zoomOutButton.addEventListener('click', () => {
+//   zoomInstance.zoom({
+//     scale: zoomInstance.getOptions().minScale
+//   });
+// });
     
 

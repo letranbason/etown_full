@@ -349,11 +349,15 @@ body{
     border-bottom: 1px solid $cl-lightgold;
     .param-item{
       padding: 9rem 0;
+      align-items: center;
+      text-align: center;
       @media (max-width:767px){
         padding: 3rem 0;
         position: relative;
+        align-items: center;
+        text-align: center;
       }
-      .wrap-ele{
+      .wrap{
         position: relative;
         .page-item-info{
           position: absolute;
