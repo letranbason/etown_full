@@ -9,36 +9,6 @@ $(function() {
 
 
 var App = {
-    // sliderHome: function(){
-    //     jQuery('.banner_slider').slick({
-    //       infinite: true,
-    //       slidesToShow: 1,
-    //       slidesToScroll: 1,
-    //       autoplay: true,
-    //       autoplaySpeed: 5000,
-    //       speed: 1500,
-    //       dots: true,
-    //       arrows: false,
-    //       fade: false,
-    //       focusOnSelect: true,
-    //     });
-    //     jQuery('.slider_partner').slick({
-    //       infinite: true,
-    //       slidesToShow: 1,
-    //       slidesToScroll: 1,
-    //       variableWidth: true,
-    //       centerMode: true,
-    //       autoplay: false,
-    //       autoplaySpeed: 5000,
-    //       speed: 1500,
-    //       dots: false,
-    //       arrows: true,
-    //       fade: false,
-    //       focusOnSelect: true,
-    //       prevArrow: '<div class="prev_slider"><img src="assets/images/left.png" class="img-fluid"/></div>',
-    //       nextArrow: '<div class="next_slider"><img src="assets/images/right.png" class="img-fluid"/></div>',
-    //     });
-    // },
     slideView : function(){
         //count number slide
         jQuery('.slider-view-img').on('beforeChange', function(event, slick, currentSlide, nextSlide){
@@ -134,4 +104,24 @@ jQuery(document).ready(function () {
     App.mobileHandle();
     AOS.init({duration: 2500,disable: 'mobile'});
 });
+
+const zoomableImage = document.getElementById('zoomable-image');
+mediumZoom(zoomableImage);
+
+const zoomInButton = document.getElementById('zoom-in-button');
+const zoomOutButton = document.getElementById('zoom-out-button');
+const zoomInstance = mediumZoom(zoomableImage);
+
+zoomInButton.addEventListener('click', () => {
+  zoomInstance.zoom({
+    scale: zoomInstance.getOptions().maxScale
+  });
+});
+
+zoomOutButton.addEventListener('click', () => {
+  zoomInstance.zoom({
+    scale: zoomInstance.getOptions().minScale
+  });
+});
+    
 

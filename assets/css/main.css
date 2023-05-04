@@ -502,7 +502,8 @@ body .btn.btn-white {
 }
 @media (min-width: 320px) and (max-width: 786px) {
   #banner .banner_info {
-    top: 57%;
+    top: 50%;
+    background: rgba(32, 69, 42, 0.8);
   }
   #banner .banner_info .cl-gradient .col-lg-2 {
     font-size: 20px;
@@ -715,7 +716,7 @@ body .btn.btn-white {
 }
 @media (min-width: 1400px) {
   #amenity_site .slider_amenity {
-    width: calc(100% + (100vw - 1320px) / 2);
+    width: 100%;
   }
 }
 #amenity_site .slider_amenity .item {
@@ -851,34 +852,34 @@ body .btn.btn-white {
 #testimonial .form_contact {
   background-color: #CFAE89;
 }
-#testimonial .form_contact .form_layout .form-label {
+#testimonial .form_contact .form .form-label {
   color: #735135;
 }
-#testimonial .form_contact .form_layout .form-control {
+#testimonial .form_contact .form .form-control {
   background: transparent;
   border: 0;
   border-bottom: 1px solid #735135;
   border-radius: 0;
   padding: 0;
 }
-#testimonial .form_contact .form_layout .form-control:focus {
+#testimonial .form_contact .form .form-control:focus {
   box-shadow: none;
 }
-#testimonial .form_contact .form_layout textarea {
+#testimonial .form_contact .form textarea {
   resize: none;
 }
-#testimonial .form_contact .form_layout .form-check .form-check-input {
+#testimonial .form_contact .form .form-check .form-check-input {
   background-color: transparent;
   width: 20px;
   height: 20px;
 }
-#testimonial .form_contact .form_layout .form-check .form-check-input:checked {
+#testimonial .form_contact .form .form-check .form-check-input:checked {
   background-color: #1D2827;
 }
-#testimonial .form_contact .form_layout .form-check .form-check-label {
+#testimonial .form_contact .form .form-check .form-check-label {
   color: #735135;
 }
-#testimonial .form_contact .form_layout .btn {
+#testimonial .form_contact .form .btn {
   background-color: #20452A;
   border-radius: 0;
   height: 55px;
@@ -1005,7 +1006,12 @@ body .btn.btn-white {
   background-image: url(../images/bg-brown.jpg);
   background-size: cover;
 }
+#footer_site .footer_infor .infor_address {
+  align-items: center;
+}
 #footer_site .footer_infor .infor_address .item {
+  padding-top: 50px;
+  text-align: center;
   width: 200px;
 }
 @media (max-width: 767px) {
