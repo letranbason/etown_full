@@ -351,7 +351,7 @@ body{
       padding: 9rem 0;
       align-items: center;
       text-align: center;
-      @media (max-width:767px){
+      @media (max-width:768px){
         padding: 3rem 0;
         position: relative;
         align-items: center;
@@ -361,9 +361,10 @@ body{
         position: relative;
         .page-item-info{
           position: absolute;
-          right: -20px;
-          @media (max-width:767px){
+          @media (max-width:768px){
             right: 0;
+            align-items: center;
+            text-align: center;
           }
         }
       }
@@ -372,7 +373,7 @@ body{
       &:not(:last-child){
         .param-item{
           position: relative;
-          @media (max-width:767px){
+          @media (max-width:768px){
             &::before{
               display: none;
             }
@@ -408,10 +409,10 @@ body{
   background-image: url(../images/bg-brown.jpg);
   background-size: cover;
   padding: 9rem 0;
-  @media (min-width: 768px) and (max-width:1023px){
+  @media (min-width: 768px) and (max-width:1200px){
     padding: 3rem 0;       
   }
-  @media (max-width:767px){
+  @media (max-width:768px){
     padding: 2rem 0;
   }
   .brand_text{
@@ -425,7 +426,7 @@ body{
       background-color: $cl-dark;
       left: 50%;
       transform: translate(-50%, 0);
-      @media (max-width:767px){
+      @media (max-width:768px){
         width: 100%;
       }
     }
@@ -439,7 +440,7 @@ body{
     padding-left: 0;
     li{
       margin:3rem;
-      @media (max-width:767px){
+      @media (max-width:768px){
         margin: 2rem;
       }
       img{
@@ -453,7 +454,7 @@ body{
 #gallery_project{
   background: #000;
   .grid-container {
-    @media (max-width:767px){
+    @media (max-width:768px){
       -ms-grid-template-areas: 
       'one three'
       'two three'
@@ -536,7 +537,7 @@ body{
     .location_desc{
       border-left: 1px solid $cl-lightgold;
       height: 100%;
-      @media (max-width:767px){
+      @media (max-width:768px){
         border: 0;
       }
     }
@@ -555,7 +556,7 @@ body{
   .slider_amenity{
     .item{
       margin-right: 20px;
-      @media (max-width:767px){
+      @media (max-width:768px){
         width: 40vw;
       }
       figure{
@@ -563,7 +564,7 @@ body{
         margin-bottom: 0;
         position: relative;
         overflow: hidden;
-        @media (max-width:767px){
+        @media (max-width:768px){
           width: 40vw;
         }
         &::before{
@@ -603,32 +604,32 @@ body{
   }
 }
 
-#floorPlan{
+#floor{
   background-image: url(../images/bg-brown.jpg);
   background-size: cover;
   padding: 1rem 0;
-  .floorPlan_wrap{
+  .floor_wrap{
     border-top: 1px solid $cl-green;
     border-bottom: 1px solid $cl-green;
-    .floorPlan_content{
+    .floor_content{
       padding: 7rem 7rem 7rem 0 ;
       border-right: 1px solid $cl-green;
       @media (min-width: 768px) and (max-width:1023px){
         padding: 3rem 3rem 3rem 0 ;
       }
-      @media (max-width:767px){
+      @media (max-width:768px){
         border: 0;
         padding: 2rem 0 ;
       }
     }
-    .floorPlan_img{
+    .floor_img{
       img{
         mix-blend-mode: difference;
       }
     }
     @media (min-width: 1400px){
-      .floorPlan_img {
-        width: calc(100% + (100vw - 1320px) / 2);
+      .floor_img {
+        width: 100%;
       }
     }
   }
@@ -643,7 +644,7 @@ body{
   @media (min-width: 768px) and (max-width:1023px){
     padding: 3rem 0;       
   }
-  @media (max-width:767px){
+  @media (max-width:768px){
     padding: 2rem 0;
   }
   .test_item{
@@ -654,7 +655,7 @@ body{
       margin-bottom: 3rem;
       padding: 0 1rem;     
     }
-    @media (max-width:767px){
+    @media (max-width:768px){
       margin-bottom: 2rem;
       padding: 0 1rem;
     }
@@ -664,7 +665,7 @@ body{
       position: absolute;
       left: -10px;
       top: -10px;
-      @media (max-width:767px){
+      @media (max-width:768px){
         left: 0;
       }
     }
@@ -727,7 +728,7 @@ body{
       padding-bottom: 6rem ;
       height: 100%;
       padding: 1.5rem 1.5rem 3rem 1.5rem;
-      @media (max-width:767px){
+      @media (max-width:768px){
         padding-bottom: 2rem !important;
       }
       .new_desc{
@@ -754,7 +755,7 @@ body{
       align-items: center;
       background: #20452A;
       padding: 30px 50px;
-      @media (max-width:767px){
+      @media (max-width:768px){
         padding: 10px;
       }
       @media (min-width: 768px) and (max-width:1024px){
@@ -767,7 +768,7 @@ body{
           color: $cl-lightbrown;
           border: 1px solid $cl-lightbrown;
           padding: 10px 20px;
-          @media (max-width:767px){
+          @media (max-width:768px){
           padding: 5px;
           }
         }
@@ -782,7 +783,7 @@ body{
   @media (min-width: 768px) and (max-width:1023px){
     padding: 3rem 0;       
   }
-  @media (max-width:767px){
+  @media (max-width:768px){
     padding: 2rem 0;
   }
   .list_faqs{
@@ -803,7 +804,7 @@ body{
             }
             .acc-num{
               margin-right: 50px;
-              @media (max-width:767px){
+              @media (max-width:768px){
                 margin-right: 20px;
               }
             }
@@ -815,9 +816,9 @@ body{
         }
         .accordion-body{
           width: 75%;
-          margin-left: calc(50px + 1.25rem);
-          @media (max-width:767px){
-            margin-left: calc(20px + 1.25rem);
+          margin-left: 3rem;
+          @media (max-width:768px){
+            margin-left: 2rem;
           }
         }
       }
@@ -835,7 +836,7 @@ body{
         padding-top: 50px;
         text-align: center;
         width: 200px;
-        @media (max-width:767px){
+        @media (max-width:768px){
           width: 100%;
         }
       }
@@ -872,56 +873,3 @@ body{
 
 
 
-
-
-.overlay{
-  position: fixed;
-  top:0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color:#00000066;
-  display: none;
-  z-index: 1031;
-}
-.nav__mobile{
-    z-index: 1032;
-    position: fixed;
-    top:0;
-    right: 0;
-    bottom: 0;
-    background: $cl-green;
-    width: 100%;
-    max-width: 60vw;
-    display: flex;
-    transform:translateX(100%);
-    transition: 0.5s;
-    flex-direction: column;
-    height: 100%;
-    justify-content: center;
-    .nav-mobile__list{
-      list-style: none;
-      padding-left: 0;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      li{
-        margin: 15px;
-        text-align: center;
-        a{
-          font-family: $font-family;
-          color: $cl-white;
-          font-size: 20px;
-        }
-      }
-    }
-    .language_mobile{
-      li{
-        margin: 0 20px;
-        a{
-          color: $cl-white;
-        }
-      }
-    }
-}
